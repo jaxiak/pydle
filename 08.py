@@ -25,9 +25,7 @@ def coding_problem_08(s, k, show_string = False):
                     return False
         return True
 
-    if show_string:
-        start, end = 0, 0
-    current_start, current_end, current_length, length = 0, 0, 0, 0
+    start, end, current_start, current_end, current_length, length = 0, 0, 0, 0, 0, 0
     current_substring = s[current_start:current_end]
     while current_start < len(s):
         if check_sub(current_start, current_end +1):
